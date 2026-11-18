@@ -54,8 +54,4 @@ The provided harness was run locally with `make test`: **29 passed, 0 failed**. 
 
 ## Known limitations
 
-The allocator is single-threaded and does not use locks. It does not return whole free chunks to the operating system, and it uses a linear scan for placement and pointer validation. The allocator intentionally avoids defining the standard `malloc` family. The benchmark reports allocator heap statistics after all its slots have been freed; therefore a fully coalesced workload can produce a single large free block and a zero external-fragmentation value. `sbrk()` is a legacy interface and can conflict with other allocators in a process, which is why this project is intended as a controlled teaching exercise.
-
-## Sources and AI-tool declaration
-
-The assignment PDF and supplied starter files were the primary specification. Linux/POSIX interfaces used include `sbrk`, `write`, `clock_gettime`, `memcpy` and `memset`. ChatGPT assisted with drafting and reviewing code and documentation. The student should understand the implementation, rerun the tests, and be able to explain the design and benchmark before submission.
+The allocator is single-threaded and does not use locks. It does not return whole free chunks to the operating system, and it uses a linear scan for placement and pointer validation. The allocator intentionally avoids defining the standard `malloc` family. The benchmark reports allocator heap statistics after all its slots have been freed; therefore a fully coalesced workload can produce a single large free block and a zero external-fragmentation value. `sbrk()` is a legacy interface and can conflict with other allocators in a process, which is why this project is intended as a controlled teaching exercise

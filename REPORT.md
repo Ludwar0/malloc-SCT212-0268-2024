@@ -1,6 +1,6 @@
 # Allocator experiment report
 
-**Student:** Manu Ludwaro — **SCT212-0268/2024**
+**Student:** Emmanuel Ludwaro — **SCT212-0268/2024**
 
 ## Method
 

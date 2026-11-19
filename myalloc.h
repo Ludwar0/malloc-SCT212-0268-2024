@@ -3,6 +3,10 @@
 
 #include <stddef.h>
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 /* Placement policy used when searching the free list. */
 typedef enum { FIT_FIRST, FIT_BEST } fit_policy_t;
 
